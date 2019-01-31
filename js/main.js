@@ -5,7 +5,7 @@ $('button').on('click', createSkill)
 function createSkill() {
     const $skill = $('input').val()
     if (!$skill) {
-        alert('YO! Chill add a skill')
+        alert('You need to add a new grocery item!')
     } else {
         const $listItem = $(`<p><span>X</span> | ${$skill}</p>`)
 
@@ -17,4 +17,4 @@ function createSkill() {
             $(this).closest('p').remove()
         })
     }
-}
+} 
